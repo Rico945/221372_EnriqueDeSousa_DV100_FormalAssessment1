@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,145 @@
     <title>Closed Door University - Home</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/index.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
-    
+    <nav>
+        <div class="logo">ClosedDoor University</div>
+        <div class="nav-con">
+            <ul>
+                <li>Home</li>
+                <li style="color: grey;">Prospectus</li>
+                <li style="color: grey;">Academic Calendar</li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                            <a href="#">UX Design</a>
+                            <a href="#">Development</a>
+                            <a href="#">Product Design</a>
+                            <a href="#">Creative Computing</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="search-button">Search</button>
+            <input class="search-bar" type="text" placeholder="Search...">
+        </div>
+    </nav>
+
+    <header>
+        <h1>Your Future, From the Past!</h1>
+        <p>Marvel at this generic text! Put some text here, anything you want as long as it's not Lorem Ipsum.</p>
+        <div class="line"></div>
+        <p>Take a look at some of our subject offerings by clicking the buttons below!</p>
+        <button class="button-ux">UX Design</button>
+        <button class="button-dev">Devlopment</button>
+        <button class="button-prod">Product Design</button>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <div class="ux-box">
+                    <div class="content">
+                        <img src="assets/subjects-01.jpg" class="subject-img">
+                        <p><b>UX Design</b></p>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <button class="rm-ux">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="dev-box">
+                    <div class="content">
+                        <img src="assets/subjects-03.jpg" class="subject-img">
+                        <p><b>Development</b></p>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <button class="rm-dev">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="prod-box">
+                    <div class="content">
+                        <img src="assets/subjects-02.jpg" class="subject-img">
+                        <p><b>Product Design</b></p>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <button class="rm-prod">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="sign-up">
+                    <h3>Sign Up</h3>
+                    <p>If you would like to register for one of our courses, use the form below.</p>
+                </div>
+                <div class="inputs">
+                    <input class="name" type="text" placeholder="Name & Surname" id="name">
+                    <input class="email" type="email" placeholder="Enter email" id="email">
+                    <input class="number" type="text" placeholder="Contact Number" id="number">
+                    <select class="subject" id="subject">
+                        <option selected>Select a Subject</option>
+                        <option>UX Design</option>
+                        <option>Development</option>
+                        <option>Product Design</option>
+                    </select>
+                    <input class="password" type="password" placeholder="Password">
+                    <input class="checkbox" type="checkbox" id="checkbox">
+                    <label>Send Me Spam Newspapers</label><br>
+                    <button class="su-button" onclick="addStudent()">Register Account</button>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="gallery">
+                    <h3>Our Gallery</h3>
+                    <p>Take a look at some of our cool shit!</p>
+                </div>
+                <div class="image-slideshow">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="assets/one.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="assets/two.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="assets/three.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Footer</h3>
+    </footer>
 </body>
+
 </html>
